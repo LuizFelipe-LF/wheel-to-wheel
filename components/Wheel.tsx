@@ -314,7 +314,7 @@ export default function Wheel({ people = DEFAULT_PEOPLE }: WheelProps) {
                   >
                     <p className="text-sm text-amber-900 dark:text-amber-200 text-center font-medium">
                       😴 Ops! O dev ficou com preguiça de fazer isso aqui. 
-                      Use a lista padrão pra não dar treta na hora de dividir a conta!
+                      Use a lista padrão e chora baixo.
                     </p>
                   </motion.div>
                 )}
