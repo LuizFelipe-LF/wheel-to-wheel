@@ -30,7 +30,7 @@ interface WheelProps {
 }
 
 export default function Wheel({ people = DEFAULT_PEOPLE }: WheelProps) {
-  const [currentPeople, setCurrentPeople] = useState<string[]>(people);
+  const [currentPeople] = useState<string[]>(people);
   const [isSpinning, setIsSpinning] = useState(false);
   const [winner, setWinner] = useState<string | null>(null);
   const [rotation, setRotation] = useState(0);
@@ -145,7 +145,7 @@ export default function Wheel({ people = DEFAULT_PEOPLE }: WheelProps) {
     setShowLazyMessage(true);
   };
 
-  const removePerson = (index: number) => {
+  const removePerson = (_index: number) => {
     setShowLazyMessage(true);
   };
 
@@ -359,7 +359,7 @@ export default function Wheel({ people = DEFAULT_PEOPLE }: WheelProps) {
                 </div>
 
                 <p className="text-xs text-muted-foreground text-center">
-                  Volte pra "Lista Padrão" pra fazer o sorteio
+                  Volte pra &quot;Lista Padrão&quot; pra fazer o sorteio
                 </p>
               </div>
             </TabsContent>
